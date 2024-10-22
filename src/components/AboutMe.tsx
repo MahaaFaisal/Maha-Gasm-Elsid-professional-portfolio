@@ -26,7 +26,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/3">
           <img
-            src="../resources/profile.jpg"
+            src="/Users/mafaisal/Desktop/portfolio/src/resources/profile.jpg"
             alt="Maha Gasm Elsid"
             className="w-64 h-64 rounded-full object-cover shadow-lg"
           />
