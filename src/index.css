@@ -3,16 +3,15 @@
 @import 'tailwindcss/utilities';
 
 :root {
-  --color-bg: #fef6e4; /* Soft cream background */
-  --color-text: #4a3c30; /* Darker warm brown for text */
-  --color-primary: #7a5b3e; /* Warm earthy brown */
-  --color-secondary: #b6a76d; /* Soft beige */
-  --color-accent: #d88f4a; /* Warm amber for accents */
+  --color-bg: #fef6e4;
+  --color-text: #4a3c30;
+  --color-primary: #7a5b3e;
+  --color-secondary: #b6a76d;
+  --color-accent: #d88f4a;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  /* background-color: var(--color-bg); */
   background: url('../resources/endless-constellation.svg');
   color: var(--color-text);
   overflow-x: hidden;
@@ -23,7 +22,7 @@ body {
 }
 
 .section-enter {
-  opacity: 0.05;
+  opacity: 0.1;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
@@ -34,7 +33,8 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.819);
+
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

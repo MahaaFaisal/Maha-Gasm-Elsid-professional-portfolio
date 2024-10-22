@@ -8,7 +8,8 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Reflections from './components/Reflections';
 import Footer from './components/Footer';
-import backgroundImage from './resources/endless-constellation.svg'
+import backgroundImage from './resources/subtle-prism.svg'
+
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient">
+    <div className="min-h-screen bg-[url('./resources/subtle-prism.svg')]">
       <Header />
       <main
         className="container mx-auto px-4 py-8"
