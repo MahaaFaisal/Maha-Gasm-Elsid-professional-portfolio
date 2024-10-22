@@ -8,13 +8,13 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 mb-4 md:mb-0">&copy; 2024 Maha Gasm Elsid. All rights reserved.</p>
           <div className="flex space-x-6">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
+            <a href="https://github.com/MahaaFaisal" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
+            <a href="https://www.linkedin.com/in/mahagasmelsid/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
               <Linkedin size={24} />
             </a>
-            <a href="/path-to-your-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
+            <a href="./resources/Maha-Gasm-Elsid-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
               <FileText size={24} />
             </a>
           </div>

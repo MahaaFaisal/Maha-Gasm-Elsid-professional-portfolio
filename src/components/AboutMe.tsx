@@ -26,7 +26,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/3">
           <img
-            src="https://via.placeholder.com/300"
+            src="../resources/profile.jpg"
             alt="Maha Gasm Elsid"
             className="w-64 h-64 rounded-full object-cover shadow-lg"
           />
@@ -51,15 +51,15 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
             </div>
             <div className="flex items-center">
               <Linkedin className="mr-2 text-gray-500" />
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">LinkedIn Profile</a>
+              <a href="https://www.linkedin.com/in/mahagasmelsid/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">LinkedIn Profile</a>
             </div>
             <div className="flex items-center">
               <Github className="mr-2 text-gray-500" />
-              <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub Profile</a>
+              <a href="https://github.com/MahaaFaisal" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub Profile</a>
             </div>
             <div className="flex items-center">
               <FileText className="mr-2 text-gray-500" />
-              <a href="/path-to-your-cv.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download CV</a>
+              <a href="../resources/Maha-Gasm-Elsid-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download CV</a>
             </div>
           </div>
         </div>
