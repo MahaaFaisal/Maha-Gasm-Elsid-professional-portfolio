@@ -2,14 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 :root {
-  --color-bg: #f0f4f8;
-  --color-text: #2d3748;
-  --color-primary: #4a5568;
-  --color-secondary: #718096;
-  --color-accent: #3182ce;
+  --color-bg: #fef6e4; /* Soft cream background */
+  --color-text: #4a3c30; /* Darker warm brown for text */
+  --color-primary: #7a5b3e; /* Warm earthy brown */
+  --color-secondary: #b6a76d; /* Soft beige */
+  --color-accent: #d88f4a; /* Warm amber for accents */
 }
 
 body {

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { User, MapPin, Phone, Mail, Linkedin, Github, FileText } from 'lucide-react';
 import profileImage from '../resources/profile.jpg';
 import resume from '../resources/Maha-Gasm-Elsid-resume.pdf';
+import background from '../resources/endless-constellation.svg'
 
 interface AboutMeProps {
   scrollY: number;
@@ -24,7 +25,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
   }, [scrollY]);
 
   return (
-    <section id="about" className="py-16 section-enter bg-gray-100 border-t-4 border-blue-600" ref={sectionRef}>
+    <section id="about" className="py-16 section-enter  border-t-4 border-blue-600" ref={sectionRef} style={{backgroundImage: 'url(${background})',}}>
   <div className="flex flex-col md:flex-row items-center gap-8">
     <div className="md:w-1/3">
       <img
