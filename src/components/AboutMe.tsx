@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { User, MapPin, Phone, Mail, Linkedin, Github, FileText } from 'lucide-react';
+import profileImage from '../resources/profile.jpg';
+import resume from '../resources/Maha-Gasm-Elsid-resume.pdf';
 
 interface AboutMeProps {
   scrollY: number;
@@ -26,7 +28,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/3">
           <img
-            src="/Users/mafaisal/Desktop/portfolio/src/resources/profile.jpg"
+            src={profileImage}
             alt="Maha Gasm Elsid"
             className="w-64 h-64 rounded-full object-cover shadow-lg"
           />
@@ -59,7 +61,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
             </div>
             <div className="flex items-center">
               <FileText className="mr-2 text-gray-500" />
-              <a href="../resources/Maha-Gasm-Elsid-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download CV</a>
+              <a href={resume} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download CV</a>
             </div>
           </div>
         </div>

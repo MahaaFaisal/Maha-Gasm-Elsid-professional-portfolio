@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, FileText } from 'lucide-react';
+import resume from '../resources/Maha-Gasm-Elsid-resume.pdf';
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const Footer: React.FC = () => {
             <a href="https://www.linkedin.com/in/mahagasmelsid/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
               <Linkedin size={24} />
             </a>
-            <a href="./resources/Maha-Gasm-Elsid-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
+            <a href={resume} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">
               <FileText size={24} />
             </a>
           </div>
