@@ -24,16 +24,16 @@ const Projects: React.FC<ProjectsProps> = ({ scrollY }) => {
 
   const projects = [
     {
-      title: "libft",
-      description: "Libft is the first project in the 42 school curriculum, where I am tasked with creating my own C library. The project involves implementing a variety of functions from the standard C library, building a solid foundation in understanding how these functions work internally.",
-      technologies: ["C language", "Makefile", "Valgrind"],
-      link: "https://github.com/MahaaFaisal/libft",
-    },
+      title: "Personal e-Portfolio",
+      description: "Developed a responsive personal portfolio using React, TypeScript, and Tailwind CSS. This project showcases my skills, projects, and professional experiences, providing a platform for potential employers and collaborators to learn more about my work and expertise.",
+      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      link: "https://github.com/MahaaFaisal/Maha-Gasm-Elsid-professional-portfolio",
+    }, 
     {
-      title: "minishell",
-      description: "Minishell is a challenging group project in the 42 school curriculum, where I am building a Unix-like shell in C that mimics the functionality of Bash. The shell must handle complex tasks such as parsing and executing commands, managing processes and signals, handling pipes, redirections, environment variables, and more.",
-      technologies: ["C language", "Makefile", "Valgrind", "bash", "System calls", "Git"],
-      link: "https://github.com/MahaaFaisal/philo",
+      title: "Cub3d",
+      description: "The Cub3D group project is an integral part of the 42 school curriculum, where I am tasked with developing a 3D game engine that renders a virtual environment using raycasting techniques. This project involves implementing complex algorithms to simulate the behavior of light and create a visually immersive experience.",
+      technologies: ["C language", "Makefile", "Valgrind", "MiniLibx", "System calls", "Git"],
+      link: "https://github.com/suhana66/cub3d",
     },
     {
       title: "Philosophers",
@@ -42,10 +42,16 @@ const Projects: React.FC<ProjectsProps> = ({ scrollY }) => {
       link: "https://github.com/MahaaFaisal/minishell42",
     },
     {
-      title: "Cub3d",
-      description: "The Cub3D group project is an integral part of the 42 school curriculum, where I am tasked with developing a 3D game engine that renders a virtual environment using raycasting techniques. This project involves implementing complex algorithms to simulate the behavior of light and create a visually immersive experience.",
-      technologies: ["C language", "Makefile", "Valgrind", "MiniLibx", "System calls", "Git"],
-      link: "https://github.com/suhana66/cub3d",
+      title: "minishell",
+      description: "Minishell is a challenging group project in the 42 school curriculum, where I am building a Unix-like shell in C that mimics the functionality of Bash. The shell must handle complex tasks such as parsing and executing commands, managing processes and signals, handling pipes, redirections, environment variables, and more.",
+      technologies: ["C language", "Makefile", "Valgrind", "bash", "System calls", "Git"],
+      link: "https://github.com/MahaaFaisal/philo",
+    },
+    {
+      title: "libft",
+      description: "Libft is the first project in the 42 school curriculum, where I am tasked with creating my own C library. The project involves implementing a variety of functions from the standard C library, building a solid foundation in understanding how these functions work internally.",
+      technologies: ["C language", "Makefile", "Valgrind"],
+      link: "https://github.com/MahaaFaisal/libft",
     },
     {
       title: "Multi-Level Business Performance Monitoring Dashboard for Startups",

@@ -36,7 +36,7 @@ const Achievements: React.FC<AchievementsProps> = ({ scrollY }) => {
         <ul className="space-y-4">
           {achievements.map((achievement, index) => (
             <li key={index} className="flex items-start">
-              <Award className="mr-2 mt-1 text-blue-500" size={20} />
+              <Award className="mr-2 mt-1 text-brown-500" size={20} />
               <span className="text-gray-700">{achievement}</span>
             </li>
           ))}
