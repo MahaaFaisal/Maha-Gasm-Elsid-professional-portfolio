@@ -42,7 +42,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
             <div className="md:w-2/3">
               <h2 className="text-4xl font-extrabold mb-4 text-gray-800">Maha Gasm Elsid</h2>
               <p className="mb-4 text-gray-700 leading-relaxed">
-                Dedicated Information Technology graduate with a proven track record in precision, problem-solving, and organization. Eager to build a link between theory and practice, especially in Software Development Life-Cycle (SDLC), and software development methodologies and tools.
+              Dedicated Information Technology graduate with hands-on experience in software development, project management, and technical problem-solving. Skilled in applying theoretical knowledge to real-world scenarios, particularly within the Software Development Life Cycle (SDLC) and various development methodologies. Committed to continuous learning, I am currently expanding my knowledge in AI to leverage technology for driving effective solutions.
               </p>
               <br/>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
