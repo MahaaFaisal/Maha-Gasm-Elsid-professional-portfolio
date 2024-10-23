@@ -52,7 +52,14 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
                 </div>
                 <div className="flex items-center">
                   <Github className="mr-2 text-gray-500" />
-                  <a href="https://github.com/MahaaFaisal" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">GitHub Profile</a>
+                  <a 
+                    href="https://github.com/MahaaFaisal" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:underline hover:text-gray-800 transition duration-200 cursor-pointer"
+                  >
+                    GitHub Profile
+                  </a>
                 </div>
                 <div className="flex items-center">
                   <Mail className="mr-2 text-gray-500" />
@@ -60,7 +67,14 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
                 </div>
                 <div className="flex items-center">
                   <Linkedin className="mr-2 text-gray-500" />
-                  <a href="https://www.linkedin.com/in/mahagasmelsid/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">LinkedIn Profile</a>
+                  <a 
+                    href="https://www.linkedin.com/in/mahagasmelsid/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:underline hover:text-gray-800 transition duration-200 cursor-pointer"
+                  >
+                    LinkedIn Profile
+                  </a>
                 </div>
                 <div className="flex items-center">
                   <Phone className="mr-2 text-gray-500" />
@@ -68,7 +82,14 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
                 </div>
                 <div className="flex items-center">
                   <FileText className="mr-2 text-gray-500" />
-                  <a href={resume} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">Download CV</a>
+                  <a 
+                    href={resume} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:underline hover:text-gray-800 transition duration-200 cursor-pointer"
+                  >
+                    Download CV
+                  </a>
                 </div>
               </div>
             </div>

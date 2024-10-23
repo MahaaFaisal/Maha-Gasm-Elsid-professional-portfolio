@@ -39,8 +39,6 @@ const Qualifications: React.FC<QualificationsProps> = ({ scrollY }) => {
         </h3>
         <p className="text-gray-600">42 Abu Dhabi, UAE</p>
         <p className="text-sm text-gray-500">OCTOBER 2023 - PRESENT</p>
-        <p className="mt-2">GPA: 3.67/4.00</p>
-        <p className="mt-2 text-gray-700">Graduation Project: "Multi-Level Business Performance Monitoring Dashboard for Startups."</p>
       </div>
 
         <div className="card p-6">
