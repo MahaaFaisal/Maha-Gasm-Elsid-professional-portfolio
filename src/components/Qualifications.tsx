@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 // import { GraduationCap } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import certificate from '/workspaces/Maha-Gasm-Elsid-professional-portfolio/src/resources/Certificate.pdf';
-import transcript42 from '/workspaces/Maha-Gasm-Elsid-professional-portfolio/src/resources/transcript42.pdf';
+import certificate from '../resources/Certificate.pdf';
+import transcript42 from '../resources/transcript42.pdf';
 interface QualificationsProps {
   scrollY: number;
 }
