@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { Briefcase } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react'; // Import arrow icons
 
 interface WorkExperienceProps {
   scrollY: number;
@@ -7,6 +7,7 @@ interface WorkExperienceProps {
 
 const WorkExperience: React.FC<WorkExperienceProps> = ({ scrollY }) => {
   const sectionRef = useRef<HTMLElement>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null); // Track which card is expanded
 
   useEffect(() => {
     const sectionElement = sectionRef.current;
@@ -74,24 +75,51 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ scrollY }) => {
     },
   ];
 
+  const toggleExpand = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index); // Toggle expand/collapse
+  };
+
   return (
     <section id="experience" className="py-16 section-enter" ref={sectionRef}>
       <h2 className="text-3xl font-bold mb-8 text-gray-800">Work Experience</h2>
-      <div className="space-y-8">
+      {/* Flexbox container with minimum width for each card */}
+      <div className="flex flex-wrap -mx-4">
         {experiences.map((exp, index) => (
-          <div key={index} className="card p-6">
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">{exp.title}</h3>
-            <p className="text-gray-600">{exp.company}</p>
-            <p className="text-sm text-gray-500 mb-4">{exp.date}</p>
-            {Array.isArray(exp.description) ? (
-              <ul className="list-disc list-inside text-gray-700">
-                {exp.description.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-gray-700">{exp.description}</p>
-            )}
+          <div
+            key={index}
+            className="w-full sm:w-auto flex-grow px-4 mb-8"
+            style={{ minWidth: '300px', flexBasis: '45%' }}
+          >
+            <div className="card p-6 border border-gray-300 rounded-lg">
+              <div className="flex justify-between items-center">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">{exp.title}</h3>
+                  <p className="text-gray-600">{exp.company}</p>
+                  <p className="text-sm text-gray-500 mb-4">{exp.date}</p>
+                </div>
+                <button onClick={() => toggleExpand(index)} className="focus:outline-none">
+                  {expandedIndex === index ? (
+                    <ChevronUp className="text-gray-700 w-6 h-6" />
+                  ) : (
+                    <ChevronDown className="text-gray-700 w-6 h-6" />
+                  )}
+                </button>
+              </div>
+              {/* Render the description only if the card is expanded */}
+              {expandedIndex === index && (
+                <div className="mt-4 text-gray-700">
+                  {Array.isArray(exp.description) ? (
+                    <ul className="list-disc list-inside">
+                      {exp.description.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p>{exp.description}</p>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>

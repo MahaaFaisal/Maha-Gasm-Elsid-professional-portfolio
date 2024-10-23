@@ -28,14 +28,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ scrollY }) => {
       id="about"
       className="py-16 section-enter border-t-4 border-blue-600"
       ref={sectionRef}
-      style={{
-        backgroundImage: 'url(./resources/subtle-prism.svg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
     >
       <div className="flex justify-center">
-        <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-4xl w-full">
+        <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-4xl w-full">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
               <img
